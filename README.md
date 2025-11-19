@@ -9,7 +9,7 @@
 
 ## init project with React + Vite
 
-```
+```bash
 npm create vite@latest cesium-viewer --template react
 cd cesium-viewer
 npm install cesium
@@ -25,7 +25,7 @@ export default defineConfig({
 
 ## modify index.css
 
-```
+```css
 @import "cesium/Build/Cesium/Widgets/widgets.css";
 
 html, body, #root {
