@@ -1,10 +1,14 @@
+
 # React + TypeScript + Vite
-https://cesium.com
+
+<https://cesium.com>
 
 ## create cesium account and get a token
-https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/
+
+<https://cesium.com/learn/cesiumjs-learn/cesiumjs-quickstart/>
 
 ## init project with React + Vite
+
 ```
 npm create vite@latest cesium-viewer --template react
 cd cesium-viewer
@@ -20,6 +24,7 @@ export default defineConfig({
 ```
 
 ## modify index.css
+
 ```
 @import "cesium/Build/Cesium/Widgets/widgets.css";
 
@@ -33,4 +38,5 @@ html, body, #root {
 ```
 
 ## nodejs version
+
 need to node version > 22.12
