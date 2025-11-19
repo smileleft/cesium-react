@@ -31,3 +31,6 @@ html, body, #root {
   overflow: hidden;
 }
 ```
+
+## nodejs version
+need to node version > 22.12
