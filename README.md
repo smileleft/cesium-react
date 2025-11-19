@@ -18,3 +18,16 @@ export default defineConfig({
   plugins: [cesium()],
 });
 ```
+
+## modify index.css
+```
+@import "cesium/Build/Cesium/Widgets/widgets.css";
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+```
