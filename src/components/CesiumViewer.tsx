@@ -9,7 +9,7 @@ export default function CesiumViewer({ onViewerReady }) {
 
     const viewer = new Cesium.Viewer(viewerRef.current, {
       animation: false,
-      timeline: false,
+      timeline: true,
       baseLayerPicker: false,
       geocoder: false,
       terrain: Cesium.Terrain.fromWorldTerrain(),
