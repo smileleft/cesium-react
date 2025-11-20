@@ -3,7 +3,7 @@ import * as Cesium from "cesium";
 
 export default function AirplaneScene() {
   function setup(viewer) {
-    // flight route
+    // 하드코딩된 비행기 경로
     const route = [
       { time: 0, lon: 126.97, lat: 37.56, alt: 300 },
       { time: 10, lon: 127.00, lat: 37.57, alt: 600 },
@@ -12,7 +12,7 @@ export default function AirplaneScene() {
       { time: 40, lon: 127.15, lat: 37.65, alt: 1500 },
     ];
 
-    // trajectory
+    // 시간 기반 경로 생성
     const start = Cesium.JulianDate.now();
     const positionProperty = new Cesium.SampledPositionProperty();
 
@@ -27,7 +27,7 @@ export default function AirplaneScene() {
     viewer.clock.currentTime = start;
     viewer.clock.shouldAnimate = true;
 
-    // airplane model entity
+    // 비행기 모델 엔티티
     const airplane = viewer.entities.add({
       id: "airplane-1",
       position: positionProperty,
@@ -45,7 +45,7 @@ export default function AirplaneScene() {
 
     viewer.trackedEntity = airplane;
 
-    // initial camera positon
+    // 초기 카메라 위치
     viewer.camera.flyTo({
       destination: Cesium.Cartesian3.fromDegrees(126.95, 37.55, 5000),
     });
