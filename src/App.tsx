@@ -1,6 +1,7 @@
 import { useState } from "react";
 import DefaultScene from "./components/DefaultScene";
 import AirplaneScene from "./components/AirplaneScene";
+import VisualImagery from "./components/VisaulImageryScene";
 import "./index.css";
 
 export default function App() {
@@ -19,14 +20,14 @@ export default function App() {
         }}
       >
         <h3>Scenes</h3>
-        <button
-          style={{ width: "100%", marginBottom: "10px" }}
-          onClick={() => setTab("default")}
-        >
+        <button style={{ width: "100%", marginBottom: "10px" }} onClick={() => setTab("default")}>
           default screen
         </button>
         <button style={{ width: "100%" }} onClick={() => setTab("airplane")}>
           Airplane Trajectory
+        </button>
+        <button style={{ width: "100%" }} onClick={() => setTab("visualImagery")}>
+          Visualizing Imagery
         </button>
       </div>
 
@@ -34,6 +35,7 @@ export default function App() {
       <div style={{ flex: 1 }}>
         {tab === "default" && <DefaultScene />}
         {tab === "airplane" && <AirplaneScene />}
+        {tab === "visualImagery" && <VisaulImageryScene />}
       </div>
     </div>
   );
