@@ -1,7 +1,7 @@
 import { useState } from "react";
 import DefaultScene from "./components/DefaultScene";
 import AirplaneScene from "./components/AirplaneScene";
-import VisualImagery from "./components/VisaulImageryScene";
+import VisualImageryScene from "./components/VisualImageryScene";
 import "./index.css";
 
 export default function App() {
@@ -35,7 +35,7 @@ export default function App() {
       <div style={{ flex: 1 }}>
         {tab === "default" && <DefaultScene />}
         {tab === "airplane" && <AirplaneScene />}
-        {tab === "visualImagery" && <VisaulImageryScene />}
+        {tab === "visualImagery" && <VisualImageryScene />}
       </div>
     </div>
   );
