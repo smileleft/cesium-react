@@ -43,6 +43,12 @@ html, body, #root {
 npm run dev
 ```
 
+## build
+
+```bash
+npm run build
+```
+
 ## nodejs version
 
 need to node version > 22.12
