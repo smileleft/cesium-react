@@ -8,10 +8,11 @@ export default function VisualImageryScene() {
         
         (async () => {
             const baseLayer = await Cesium.ImageryLayer.fromProviderAsync(
-                Cesium.IonImageryProvider.fromAssetId(3830183, {
-                    // 2 = Cesium World Imagery
-                    style: Cesium.IonWorldImageryStyle.AERIAL_WITH_LABELS,
-                })
+                // Cesium.IonImageryProvider.fromAssetId(3830183, {
+                //     // 2 = Cesium World Imagery
+                //     style: Cesium.IonWorldImageryStyle.AERIAL_WITH_LABELS,
+                // })
+                Cesium.IonImageryProvider.fromAssetId(3830183),
             );
 
             viewer.scene.imageryLayers.add(baseLayer);
@@ -28,7 +29,7 @@ export default function VisualImageryScene() {
             // Cesium Logo Overlay
             const cesiumLogo = await Cesium.ImageryLayer.fromProviderAsync(
                 Cesium.SingleTileImageryProvider.fromUrl(
-                    "../images/Cesium_Logo_overlay.png",
+                    "/Cesium_Logo_overlay.png",
                     {
                         rectangle: Cesium.Rectangle.fromDegrees(-75.0, 28.0, -67.0, 29.75),
                     }
